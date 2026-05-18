@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 19" width="21" height="19">
+	<title>Download</title>
+	<style>
+		.s0 { fill: none;stroke-linecap: round;stroke-linejoin: round;stroke-width: 1.5 } 
+	</style>
+	<path class="s0" stroke="currentColor" d="m10.12 13.44v-12.04"/>
+	<path class="s0" stroke="currentColor" d="m13.04 10.51l-2.92 2.93-2.91-2.93"/>
+	<path class="s0" stroke="currentColor" d="m14.75 6.13h0.94c2.03 0 3.68 1.65 3.68 3.68v4.89c0 2.03-1.64 3.67-3.67 3.67h-11.14c-2.04 0-3.69-1.65-3.69-3.68v-4.89c0-2.03 1.65-3.67 3.68-3.67h0.94"/>
+</svg>
