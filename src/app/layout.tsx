@@ -2,6 +2,7 @@ import { ReactNode } from "react"
 import { Lato } from "next/font/google"
 import "@/styles/globals.css"
 import { Metadata } from "next";
+import Header from "@/components/layout/header/Header";
 
 const latoSans = Lato({
   variable: "--font-lato-sans",
@@ -22,10 +23,12 @@ export default function Layout({
 }>) {
   return (
     <html lang="en" className={`${latoSans.variable}`}>
-      <body>
-        <header></header>
-        <main>{children}</main>
-        <footer></footer>
+      <body className="flex justify-center">
+        <div className="flex flex-col w-full max-w-360 min-h-dvh">
+          <Header />
+          <main className="flex-1">{children}</main>
+          <footer></footer>
+        </div>
       </body>
     </html>
   )
