@@ -15,9 +15,15 @@ function HeroLeftPanel() {
 
       <nav>
         <ul>
-          {SOCIAL_MEDIA_NAVIGATION.map(link => <li key={link.path}>
-            <LinkIcon path={link.path}>{link.icon}</LinkIcon>
-          </li>)}
+          {SOCIAL_MEDIA_NAVIGATION.map(link => {
+            const Icon = link.icon;
+
+            return (
+              <li key={link.path}>
+                <LinkIcon path={link.path}>{Icon ? <Icon /> : null}</LinkIcon>
+              </li>
+            );
+          })}
         </ul>
       </nav>
 
