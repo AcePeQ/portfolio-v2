@@ -1,6 +1,5 @@
 import { HEADER_NAVIGATION } from '@/lib/constants/navigation'
 import Link from 'next/link'
-import React from 'react'
 
 function MainNavigation() {
   return (
