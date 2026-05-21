@@ -6,9 +6,9 @@ type HeroFeatureProps = {
 
 function HeroFeature({ text, value }: HeroFeatureProps) {
   return (
-    <div>
-      <p><strong>{value}</strong></p>
-      <p><strong>{text}</strong></p>
+    <div className="flex flex-col gap-3 pr-4 pl-4">
+      <p className="text-orange-normal text-2xl font-extrabold"><strong>{value}</strong></p>
+      <p className="text-white-normal text-xl font-bold"><strong>{text}</strong></p>
     </div>
   )
 }

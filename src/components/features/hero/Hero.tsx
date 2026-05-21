@@ -3,7 +3,7 @@ import HeroRightPanel from "./components/HeroRightPanel"
 
 function Hero() {
   return (
-    <section id="home">
+    <section id="home" className="max-h-195">
       <div className="flex gap-20">
         <HeroLeftPanel />
         <HeroRightPanel />

@@ -3,7 +3,7 @@ import ImageFace from "@/assets/images/cartoonFaceAlpha.png"
 
 function HeroRightPanel() {
   return (
-    <div>
+    <div className="flex flex-1">
       <figure>
         <Image src={ImageFace} alt="Picture of Maciej Nojszewski - blue eyes, dark short hair" />
         <figcaption>Picture of me (Maciej Nojszewski)</figcaption>
