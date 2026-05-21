@@ -11,9 +11,9 @@
   --color-orange-dark-hover: #984300;
   --color-orange-dark-active: #723200;
   --color-orange-darker: #592700;
-  --color-gradient-orange: linear-gradient(#fd6f00, #e46400);
-  --color-gradient-orange-reverse: linear-gradient(#e46400, #fd6f00);
-  --color-gradient-orange-darker: linear-gradient(#fa6e00, #e60026);
+  --gradient-orange: linear-gradient(#fd6f00, #e46400);
+  --gradient-orange-reverse: linear-gradient(to right, #e46400, #fd6f00);
+  --gradient-orange-darker: linear-gradient(to right, #fa6e00, #e60026);
 
   --color-black-light: #e6e6e6;
   --color-black-light-hover: #d9d9d9;
@@ -57,7 +57,7 @@
   h1 {
     font-size: 70px;
     font-weight: bold;
-    background: var(--color-gradient-orange-reverse);
+    background: var(--gradient-orange-reverse);
     color: transparent;
     background-clip: text;
   }
@@ -72,6 +72,12 @@
   }
 }
 
+*,
+*::after,
+*::before {
+  transition: all 0.3s ease-in-out;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -82,4 +88,17 @@ body {
 
   color: var(--color-white-dark);
   background-color: var(--color-background);
+}
+
+.active {
+  color: var(--color-orange-normal);
+}
+
+.active:hover,
+.active:focus {
+  color: var(--color-orange-normal-hover);
+}
+
+.active:active {
+  color: var(--color-orange-normal-active);
 }

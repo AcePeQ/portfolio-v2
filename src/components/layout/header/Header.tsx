@@ -4,7 +4,7 @@ import MainNavigation from "@/components/ui/mainNavigation/MainNavigation"
 
 function Header() {
   return (
-    <header className="w-full h-15 flex items-center justify-between gap-8">
+    <header className="flex items-center justify-between gap-8 py-3  bg-background">
       <div className="w-40 flex items-center justify-start">
         <Logo />
       </div>
@@ -12,7 +12,7 @@ function Header() {
         <MainNavigation />
       </div>
       <div className="w-40 flex items-center justify-end">
-        <Button isLink variant="primary" size="medium" path="/#contact">Hire Me</Button>
+        <Button isLink variant="primary" size="small" path="/#contact">Hire Me</Button>
       </div>
     </header>
   )

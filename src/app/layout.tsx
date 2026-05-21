@@ -24,7 +24,7 @@ export default function Layout({
   return (
     <html lang="en" className={`${latoSans.variable}`}>
       <body className="flex justify-center">
-        <div className="flex flex-col w-full max-w-7xl min-h-dvh">
+        <div className="flex flex-col w-full max-w-7xl min-h-dvh pt-8 relative">
           <Header />
           <main className="flex-1">{children}</main>
           <footer></footer>

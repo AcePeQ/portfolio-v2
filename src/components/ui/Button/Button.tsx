@@ -13,7 +13,7 @@ type ButtonProps = {
 }
 
 function Button({ isLink = false, path, isIcon = false, variant = "primary", size = "medium", type = "button", onClick, children }: ButtonProps) {
-  let clsx = "flex items-center justify-center ";
+  let clsx = "flex items-center justify-center cursor-pointer ";
 
   if (variant === "primary") {
     clsx += "bg-orange-normal hover:bg-orange-normal-hover focus:bg-orange-normal-hover active:bg-orange-normal-active text-white "
@@ -26,7 +26,7 @@ function Button({ isLink = false, path, isIcon = false, variant = "primary", siz
   }
 
   if (size === "small") {
-    clsx += "px-10 py-3 rounded-lg text-lg font-bold ";
+    clsx += "px-10 py-2 rounded-lg text-lg font-bold ";
   } else if (size === "medium") {
     clsx += "px-10 py-3 rounded-lg text-xl font-bold ";
   } else if (size === "big") {
