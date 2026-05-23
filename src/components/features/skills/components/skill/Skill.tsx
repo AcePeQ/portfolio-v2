@@ -7,7 +7,7 @@ type SkillProps = {
 }
 function Skill({ percentage, skill, children }: SkillProps) {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center">
       <div className="relative w-40 h-40 mb-3">
         <svg className="w-full h-full" viewBox="0 0 100 100">
           <circle
@@ -28,11 +28,11 @@ function Skill({ percentage, skill, children }: SkillProps) {
             fill="transparent"
             strokeDasharray="251.2"
             strokeDashoffset={`calc(251.2px - (251.2px * ${percentage}) / 100)`}
-            transform="rotate(90 50 50)"
+            transform="rotate(-90 50 50)"
           ></circle>
         </svg>
 
-        <div className="absolute w-17 h-17 top-3/6 left-3/6 -translate-2/4 text-white-dark-hover">
+        <div className="absolute w-17 h-17 top-3/6 left-3/6 -translate-2/4 text-white-dark-hover flex items-center justify-center">
           {children}
         </div>
       </div>
