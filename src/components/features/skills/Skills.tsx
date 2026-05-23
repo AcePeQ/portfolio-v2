@@ -1,3 +1,4 @@
+import { ReactIcon } from '@/lib/helpers/icons'
 import Skill from './components/skill/Skill'
 
 function Skills() {
@@ -6,7 +7,9 @@ function Skills() {
       <h2>My Skills</h2>
 
       <div className='flex gap-8 flex-wrap'>
-        <Skill skill='HTML' percentage={50} />
+        <Skill skill='React' percentage={100}>
+          <ReactIcon />
+        </Skill>
       </div>
     </section>
   )

@@ -1,11 +1,14 @@
+import { ReactNode } from "react";
+
 type SkillProps = {
   skill: string;
   percentage: number;
+  children: ReactNode
 }
-function Skill({ percentage, skill }: SkillProps) {
+function Skill({ percentage, skill, children }: SkillProps) {
   return (
     <div>
-      <div className="relative w-40 h-40">
+      <div className="relative w-40 h-40 mb-3">
         <svg className="w-full h-full" viewBox="0 0 100 100">
           <circle
             className="text-white-light-hover stroke-current"
@@ -25,11 +28,16 @@ function Skill({ percentage, skill }: SkillProps) {
             fill="transparent"
             strokeDasharray="251.2"
             strokeDashoffset={`calc(251.2px - (251.2px * ${percentage}) / 100)`}
+            transform="rotate(90 50 50)"
           ></circle>
         </svg>
+
+        <div className="absolute w-17 h-17 top-3/6 left-3/6 -translate-2/4 text-white-dark-hover">
+          {children}
+        </div>
       </div>
-      <p className='text-3xl font-bold text-orange-normal'>{percentage}%</p>
-      <p className='text-2xl font-bold text-white-dark-hover'>{skill}</p>
+      <p className='text-3xl font-bold text-orange-normal text-center mb-1.5'>{percentage}%</p>
+      <p className='text-2xl font-bold text-white-dark-hover text-center'>{skill}</p>
     </div>
   )
 }
