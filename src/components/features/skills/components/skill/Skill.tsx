@@ -21,7 +21,7 @@ function Skill({ percentage, skill, children }: SkillProps) {
           <circle
             className="text-orange-normal  progress-ring__circle stroke-current"
             strokeWidth="10"
-            stroke-linecap="round"
+            strokeLinecap="round"
             cx="50"
             cy="50"
             r="40"
