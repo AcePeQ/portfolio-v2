@@ -29,7 +29,7 @@ function HeroLeftPanel() {
 
       <div className="flex gap-6 mb-16">
         <Button isLink path="/#contact" variant="primary" size="medium">Hire Me</Button>
-        <Button variant="ghost" size="medium">Download CV</Button>
+        <Button isLink download="Maciej_Nojszewski_CV" path="/assets/files/Maciej_Nojszewski_CV.pdf" variant="ghost" size="medium">Download CV</Button>
       </div>
 
       <HeroFeatures />

@@ -3,6 +3,7 @@ import { MouseEventHandler, ReactNode } from "react"
 
 type ButtonProps = {
   isIcon?: boolean;
+  download?: string;
   isLink?: boolean;
   path?: string;
   variant?: "primary" | "secondary" | "ghost" | "active";
@@ -12,7 +13,7 @@ type ButtonProps = {
   children: ReactNode
 }
 
-function Button({ isLink = false, path, isIcon = false, variant = "primary", size = "medium", type = "button", onClick, children }: ButtonProps) {
+function Button({ isLink = false, download = "", path, isIcon = false, variant = "primary", size = "medium", type = "button", onClick, children }: ButtonProps) {
   let clsx = "flex items-center justify-center cursor-pointer ";
 
   if (variant === "primary") {
@@ -38,7 +39,11 @@ function Button({ isLink = false, path, isIcon = false, variant = "primary", siz
   }
 
   if (isLink && path) {
-    <Link href={path} className="clsx">{children}</Link>
+    if (download) {
+      return <Link href={path} className={clsx} download={download}>{children}</Link>
+    } else {
+      return <Link href={path} className={clsx}>{children}</Link>
+    }
   }
 
   return (
