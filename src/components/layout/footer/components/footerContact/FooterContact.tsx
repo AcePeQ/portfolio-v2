@@ -4,10 +4,19 @@ function FooterContact() {
   return (
     <nav>
       <ul className='flex gap-12'>
-        {CONTACT_NAVIGATION.map(link =>
-          <li key={link.path}>
-            <a className='text-xl font-medium text-white-dark-hover' href={link.path}>{link.name}</a>
-          </li>)}
+        {CONTACT_NAVIGATION.map(link => {
+          const Icon = link.icon;
+          return (
+            <li key={link.path}>
+              <a className="flex items-center gap-4 [&>svg]:w-6 [&>svg]:h-6 text-xl font-bold text-white-dark-hover" href={link.path}>
+                {Icon ? <Icon /> : null}
+                <span className="inline-block -mt-1">
+                  {link.name}
+                </span>
+              </a>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   )

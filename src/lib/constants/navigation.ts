@@ -43,12 +43,12 @@ export const SOCIAL_MEDIA_NAVIGATION: NavigationLink[] = [
 
 export const CONTACT_NAVIGATION: NavigationLink[] = [
   {
-    name: "Mail",
+    name: "maciej.nojszewski22@gmail.com",
     icon: MailIcon,
     path: "mailto:maciej.nojszewski22@gmail.com",
   },
   {
-    name: "Phone number",
+    name: "+48 664 138 084",
     icon: PhoneIcon,
     path: "tel:+48664138084",
   },
