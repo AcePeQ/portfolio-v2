@@ -5,7 +5,7 @@ import MailIcon from "@/assets/icons/mail.svg";
 import PhoneIcon from "@/assets/icons/phone.svg";
 import { NavigationLink } from "@/types/common.types";
 
-export const HEADER_NAVIGATION: NavigationLink[] = [
+export const MAIN_NAVIGATION: NavigationLink[] = [
   {
     name: "Home",
     path: "/",
