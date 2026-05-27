@@ -4,10 +4,10 @@ import Link from "next/link"
 
 function ProjectCard() {
   return (
-    <article className="rounded-2xl overflow-hidden bg-grey-normal-active">
-      <Link href="/" className="flex flex-col">
-        <figure className="w-full h-full">
-          <Image src={PlaceholderImage} alt="Placeholder photo" className="object-cover object-center" />
+    <article className="rounded-2xl overflow-hidden bg-grey-normal-active border-2 border-grey-normal">
+      <Link href="/" className="flex flex-col  group">
+        <figure className="w-full h-full overflow-hidden">
+          <Image src={PlaceholderImage} alt="Placeholder photo" className="object-cover object-center group-hover:scale-105" />
         </figure>
         <div className="w-full px-4 py-3.5">
           <h3 className="text-white-normal-active font-bold text-md mb-3">Name project</h3>
