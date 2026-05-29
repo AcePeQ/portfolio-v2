@@ -7,7 +7,7 @@ function ProjectCard() {
     <article className="rounded-2xl overflow-hidden bg-grey-normal-active border-2 border-grey-normal">
       <Link href="/" className="flex flex-col  group">
         <figure className="w-full h-full overflow-hidden">
-          <Image src={PlaceholderImage} alt="Placeholder photo" className="object-cover object-center group-hover:scale-105" />
+          <Image src={PlaceholderImage} alt="Placeholder photo" className="object-cover object-center group-hover:scale-105 w-full" />
         </figure>
         <div className="w-full px-4 py-3.5">
           <h3 className="text-white-normal-active font-bold text-md mb-3">Name project</h3>

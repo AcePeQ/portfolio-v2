@@ -15,25 +15,25 @@ function Skills() {
     <section id='skills'>
       <h2>My Skills</h2>
 
-      <div className='flex gap-8 flex-wrap justify-center'>
+      <div className='flex gap-4 lg:gap-8 flex-wrap justify-center'>
         {FRONT_SKILLS.map(skill => <Skill key={skill.skill} skill={skill.skill} percentage={skill.percentage}>{skill.icon}</Skill>)}
       </div>
 
       <Separator />
 
-      <div className='flex gap-8 flex-wrap justify-center'>
+      <div className='flex gap-4 lg:gap-8 flex-wrap justify-center'>
         {BACK_SKILLS.map(skill => <Skill key={skill.skill} skill={skill.skill} percentage={skill.percentage}>{skill.icon}</Skill>)}
       </div>
 
       <Separator />
 
-      <div className='flex gap-8 flex-wrap justify-center'>
+      <div className='flex gap-4 lg:gap-8 flex-wrap justify-center'>
         {OTHER_SKILLS.map(skill => <Skill key={skill.skill} skill={skill.skill} percentage={skill.percentage}>{skill.icon}</Skill>)}
       </div>
 
       <Separator />
 
-      <div className='flex gap-8 flex-wrap justify-center'>
+      <div className='flex gap-4 lg:gap-8 flex-wrap justify-center'>
         {LANGUAGE_SKILLS.map(skill => <Skill key={skill.skill} skill={skill.skill} percentage={skill.percentage}>{skill.icon}</Skill>)}
       </div>
     </section>

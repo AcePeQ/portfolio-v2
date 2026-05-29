@@ -3,7 +3,7 @@ import ProjectCard from "./components/ProjectCard"
 function ProjectShowcase() {
   return (
     <section id="project-showcase">
-      <div className="grid grid-cols-3 gap-8 ">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 ">
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
