@@ -6,8 +6,8 @@ import HeroFeatures from "./HeroFeatures"
 
 function HeroLeftPanel() {
   return (
-    <div className="flex flex-col flex-3 xl:flex-1">
-      <hgroup className="mb-6 xl:mb-8">
+    <div className="flex flex-col items-center lg:items-start lg:flex-3 xl:flex-1">
+      <hgroup className="mb-6 xl:mb-8 text-center lg:text-left">
         <p className="text-white-dark-active text-2xl">Hi I am</p>
         <p className="text-white-dark-hover text-[28px] mb-2 xl:mb-4">Maciej Nojszewski</p>
         <h1 className="leading-18">Junior Frontend Developer</h1>
