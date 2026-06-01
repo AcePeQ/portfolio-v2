@@ -4,7 +4,7 @@ function AboutMe() {
   return (
     <section id='about-me'>
       <h2>About Me</h2>
-      <p className='text-xl font-medium leading-[190%] max-w-[75ch] mx-auto text-white-dark-hover mb-12 text-justify'>Junior Frontend Developer focused on building responsive, maintainable
+      <p className='text-lg 2xs:text-xl font-medium leading-[190%] max-w-[75ch] mx-auto text-white-dark-hover mb-7 2xs:mb-12 text-justify'>Junior Frontend Developer focused on building responsive, maintainable
         and user-friendly web applications using React, TypeScript and modern
         frontend tools. Experienced in supporting commercial client projects,
         implementing UI changes, fixing bugs, creating reusable components and
