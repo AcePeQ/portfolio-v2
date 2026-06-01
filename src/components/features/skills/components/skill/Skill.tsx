@@ -7,8 +7,8 @@ type SkillProps = {
 }
 function Skill({ percentage, skill, children }: SkillProps) {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="relative w-30 h-30 lg:w-40 lg:h-40 mb-3">
+    <div className="flex flex-col items-center w-25 xs:w-30 lg:w-40">
+      <div className="relative w-25 h-25 xs:w-30 xs:h-30 lg:w-40 lg:h-40 mb-3">
         <svg className="w-full h-full" viewBox="0 0 100 100">
           <circle
             className="text-white-light-hover stroke-current"
@@ -32,11 +32,11 @@ function Skill({ percentage, skill, children }: SkillProps) {
           ></circle>
         </svg>
 
-        <div className="absolute w-12 h-12 lg:w-17 lg:h-17 top-3/6 left-3/6 -translate-2/4 text-white-dark-hover flex items-center justify-center">
+        <div className="absolute w-9 h-9 xs:w-12 xs:h-12 lg:w-17 lg:h-17 top-3/6 left-3/6 -translate-2/4 text-white-dark-hover flex items-center justify-center">
           {children}
         </div>
       </div>
-      <p className='text-2xl lg:text-3xl font-bold text-orange-normal text-center mb-1.5'>{percentage}%</p>
+      <p className='text-xl xs:text-2xl lg:text-3xl font-bold text-orange-normal text-center mb-1.5'>{percentage}%</p>
       <p className='text-xl lg:text-2xl font-bold text-white-dark-hover text-center'>{skill}</p>
     </div>
   )
