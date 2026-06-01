@@ -24,10 +24,10 @@ export default function Layout({
 }>) {
   return (
     <html lang="en" className={`${latoSans.variable}`}>
-      <body className="flex justify-center px-10">
+      <body className="flex justify-center px-6 md:px-10">
         <div className="flex flex-col w-full max-w-7xl min-h-dvh pt-4 lg:pt-8 relative">
           <Header />
-          <main className="flex-1 mb-28">{children}</main>
+          <main className="flex-1 mb-20 xs:mb-28">{children}</main>
           <Footer />
         </div>
       </body>

@@ -51,6 +51,8 @@
   --color-background: #121212;
 
   --font-lato: var(--font-lato-sans);
+
+  --breakpoint-xs: 34.6875rem;
 }
 
 @layer base {

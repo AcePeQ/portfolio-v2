@@ -6,7 +6,7 @@ import FooterContact from './components/footerContact/FooterContact'
 
 function Footer() {
   return (
-    <footer className='flex flex-col items-center justify-center gap-10 px-10 pb-10'>
+    <footer className='flex flex-col items-center justify-center gap-8 md:gap-10 md:px-10 pb-8 md:pb-10'>
       <Logo />
       <FooterNavigation />
       <FooterSocials />
