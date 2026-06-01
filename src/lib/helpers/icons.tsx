@@ -144,6 +144,16 @@ export function EnglishFlag() {
       <path fill="#FFF" d="M241 0v480h160V0zM0 160v160h640V160z" />
       <path fill="#C8102E" d="M0 193v96h640v-96zM273 0v480h96V0z" />
     </svg>
-
   )
 }
+
+export function MenuIcon() {
+  return (
+    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 14">
+      <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m12 7h-11" />
+      <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 1h-18" />
+      <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 13h-18" />
+    </svg>
+  )
+}
+
