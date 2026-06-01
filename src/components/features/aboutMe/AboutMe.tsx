@@ -16,7 +16,7 @@ function AboutMe() {
         the ability to quickly adapt to new technologies and project requirements.
       </p>
       <div className='flex items-center justify-center'>
-        <Button>Download CV</Button>
+        <Button isLink download="Maciej_Nojszewski_CV" path="/assets/files/Maciej_Nojszewski_CV.pdf">Download CV</Button>
       </div>
     </section>
   )
