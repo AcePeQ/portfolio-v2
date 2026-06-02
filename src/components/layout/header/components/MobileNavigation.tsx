@@ -23,7 +23,7 @@ function MobileNavigation() {
       </div>
 
       {isMenuOpen &&
-        <div className="absolute z-20 h-[calc(100%-88px)] w-full top-22 left-0 bg-background lg:hidden">
+        <div className="absolute z-20 h-[calc(100dvh-72px)] min-h-90 w-full top-18 left-0 bg-background lg:hidden no-doc-scroll">
           <nav className='flex items-center justify-center w-full h-full'>
             <ul className='flex flex-col text-center gap-6'>
               {MAIN_NAVIGATION.map(link =>

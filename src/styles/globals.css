@@ -56,6 +56,10 @@
   --breakpoint-2xs: 28.125rem;
 }
 
+:root:has(.no-doc-scroll) {
+  overflow: hidden;
+}
+
 @layer base {
   h1 {
     font-size: 70px;
