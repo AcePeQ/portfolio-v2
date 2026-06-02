@@ -1,5 +1,6 @@
 "use client"
 
+import Button from '@/components/ui/button/Button'
 import { MAIN_NAVIGATION } from '@/lib/constants/navigation'
 import { MenuIcon, XIcon } from '@/lib/helpers/icons'
 import Link from 'next/link'
@@ -15,7 +16,7 @@ function MobileNavigation() {
 
   return (
     <>
-      <div className="w-40 flex items-center justify-start lg:hidden">
+      <div className="sm:w-40 flex items-center justify-start lg:hidden">
         <button onClick={toggleMenu} className="w-8 h-8 cursor-pointer text-white-dark-hover hover:text-white-dark 
         active:text-white-dark-active focus:text-white-dark">
           {isMenuOpen ? <XIcon /> : <MenuIcon />}
@@ -30,6 +31,9 @@ function MobileNavigation() {
                 <li key={link.path}>
                   <Link className='text-3xl font-medium text-white-dark-hover' href={link.path}>{link.name}</Link>
                 </li>)}
+              <li>
+                <Button isLink variant="primary" size="big" path="/#contact">Hire Me</Button>
+              </li>
             </ul>
           </nav>
         </div>
