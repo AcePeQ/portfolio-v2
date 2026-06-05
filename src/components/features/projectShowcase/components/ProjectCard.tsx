@@ -1,9 +1,10 @@
 import Image from "next/image"
 import { ShowcaseProject } from "@/lib/constants/projects"
+import { motion } from "motion/react"
 
 function ProjectCard({ project }: { project: ShowcaseProject }) {
   return (
-    <article className="rounded-2xl overflow-hidden bg-grey-normal-active border-2 border-grey-normal ">
+    <motion.article initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="rounded-2xl overflow-hidden bg-grey-normal-active border-2 border-grey-normal ">
       <a href={project.link} target="_blank" className="flex flex-col group h-full w-full">
         <figure className="w-full overflow-hidden h-60  xs:h-56  lg:h-46">
           <Image loading="lazy" src={project.thumbnail} alt={`Thumbnail picture of ${project.name} project`} className="object-cover object-center group-hover:scale-105 w-full h-full" />
@@ -15,7 +16,7 @@ function ProjectCard({ project }: { project: ShowcaseProject }) {
           </div>
         </div>
       </a>
-    </article>
+    </motion.article>
   )
 }
 
