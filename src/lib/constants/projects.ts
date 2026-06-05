@@ -7,6 +7,12 @@ import SolarSystemPreview from "@/assets/images/projects/solarSystemPreview.jpg"
 import TranslateAppPreview from "@/assets/images/projects/translatePreview.jpg";
 import UnsplashPreview from "@/assets/images/projects/unsplashPreview.jpg";
 import WoasPreview from "@/assets/images/projects/woasPreview.jpg";
+import PeachStorePreview from "@/assets/images/projects/peachStorePreview.jpg";
+import NewHousePreview from "@/assets/images/projects/newHousePreview.jpg";
+import UdtPreview from "@/assets/images/projects/udtPreview.jpg";
+import BimmerTechPreview from "@/assets/images/projects/bimmerTechPreview.jpg";
+import ChopinCompetitionPreview from "@/assets/images/projects/chopinCompetitionPreview.jpg";
+import NifcPreview from "@/assets/images/projects/nifcPreview.jpg";
 
 import { StaticImageData } from "next/image";
 
@@ -19,6 +25,55 @@ export type ShowcaseProject = {
 };
 
 export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
+  {
+    name: "Peach Store",
+    thumbnail: PeachStorePreview,
+    link: "https://github.com/AcePeQ/Peach_Store",
+    type: "commercial",
+    technologies: [
+      "React",
+      "TypeScript",
+      "MUI",
+      "REST API",
+      "WooCommerce",
+      "SCSS",
+    ],
+  },
+  {
+    name: "New House",
+    thumbnail: NewHousePreview,
+    link: "https://github.com/AcePeQ/New_House",
+    type: "commercial",
+    technologies: ["React", "TypeScript", "PHP", "JavaScript", "SCSS", "CSS"],
+  },
+  {
+    name: "UDT",
+    thumbnail: UdtPreview,
+    link: "https://github.com/AcePeQ/GOV_UDT",
+    type: "commercial",
+    technologies: ["Joomla 5", "PHP", "HTML", "CSS", "JavaScript"],
+  },
+  {
+    name: "BimmerTech",
+    thumbnail: BimmerTechPreview,
+    link: "https://github.com/AcePeQ/BimmerTech",
+    type: "commercial",
+    technologies: ["Vue", "Nuxt", "JavaScript", "HTML", "CSS"],
+  },
+  {
+    name: "Chopin Competition",
+    thumbnail: ChopinCompetitionPreview,
+    link: "https://github.com/AcePeQ/Chopin_Competition",
+    type: "commercial",
+    technologies: ["React", "TypeScript", "PHP", "JavaScript", "CSS"],
+  },
+  {
+    name: "NIFC",
+    thumbnail: NifcPreview,
+    link: "https://github.com/AcePeQ/NIFC",
+    type: "commercial",
+    technologies: ["React", "TypeScript", "JavaScript", "HTML", "CSS"],
+  },
   {
     name: "Qusto Restaurant",
     thumbnail: QustoPreview,
