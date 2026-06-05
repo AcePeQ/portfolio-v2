@@ -10,7 +10,7 @@ export default function Separator({
   height = 12,
 }: SeparatorProps) {
   return (
-    <div aria-hidden className="mt-16 xs:mt-20 lg:mt-26 mb-10 flex items-center justify-center text-white-dark-hover">
+    <div aria-hidden className="mt-16 xs:mt-20 lg:mt-30 mb-10 flex items-center justify-center text-white-dark-hover">
       <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} fill="none" xmlns="http://www.w3.org/2000/svg">
         <g fill="currentColor" shapeRendering="crispEdges">
           <path fillOpacity="0.0039" d="M113 0h1v1h-1zM112 1h1v1h-1zM111 2h1v1h-1zM110 3h1v1h-1zM109 4h1v1h-1zM108 5h1v1h-1zM104 10h1v1h-1z" />
