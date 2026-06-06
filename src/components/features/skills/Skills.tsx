@@ -12,7 +12,7 @@ type SkillType = {
 
 function Skills() {
   return (
-    <section id='skills'>
+    <section>
       <h2>My Skills</h2>
 
       <div className='flex gap-4 lg:gap-8 flex-wrap justify-center'>

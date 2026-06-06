@@ -45,7 +45,7 @@ function ProjectShowcase() {
   showcaseProjects = showcaseProjects.slice(0, page * ITEMS_PER_PAGE)
 
   return (
-    <section id="project-showcase">
+    <section>
       <h2>Projects</h2>
 
       <div className="flex items-center justify-center mb-12">

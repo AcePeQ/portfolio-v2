@@ -1,16 +1,34 @@
 "use client"
 
 import { sectionVariants } from "@/lib/helpers/animations";
-import { motion } from "motion/react";
-import { ReactNode } from "react"
+import { useSetCurrentSection } from "@/lib/stores/navigationStore";
+import { motion, useInView } from "motion/react";
+import { ReactNode, useEffect, useRef } from "react"
 
 type AnimationContainerProps = {
+  id: string;
   children: ReactNode
 }
 
-function AnimationContainer({ children }: AnimationContainerProps) {
+function AnimationContainer({ id, children }: AnimationContainerProps) {
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const setCurrentSection = useSetCurrentSection();
+
+  useEffect(() => {
+    const isSeparator = id.includes("separator")
+
+    if (isSeparator || !isInView) return;
+
+    setCurrentSection(id);
+
+  }, [isInView, id, setCurrentSection])
+
+
   return (
     <motion.div
+      id={id}
+      ref={ref}
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"

@@ -7,7 +7,6 @@ import Link from 'next/link'
 function MainNavigation() {
   const currentSectionId = useCurrentSection();
 
-
   return (
     <nav className='flex items-center justify-center'>
       <ul className='flex gap-12'>

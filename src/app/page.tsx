@@ -8,31 +8,31 @@ import Separator from "@/components/ui/separator/Separator";
 export default function HomePage() {
   return (
     <>
-      <AnimationContainer>
+      <AnimationContainer id="hero">
         <Hero />
       </AnimationContainer>
 
-      <AnimationContainer>
+      <AnimationContainer id="separator-1">
         <Separator />
       </AnimationContainer>
 
-      <AnimationContainer>
+      <AnimationContainer id="about-me">
         <AboutMe />
       </AnimationContainer>
 
-      <AnimationContainer>
+      <AnimationContainer id="separator-2">
         <Separator />
       </AnimationContainer>
 
-      <AnimationContainer>
+      <AnimationContainer id="skills">
         <Skills />
       </AnimationContainer>
 
-      <AnimationContainer>
+      <AnimationContainer id="separator-3">
         <Separator />
       </AnimationContainer>
 
-      <AnimationContainer>
+      <AnimationContainer id="projects">
         <ProjectShowcase />
       </AnimationContainer>
     </>

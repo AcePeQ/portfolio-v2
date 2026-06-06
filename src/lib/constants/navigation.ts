@@ -12,6 +12,11 @@ export const MAIN_NAVIGATION: NavigationLink[] = [
     path: "/",
   },
   {
+    id: "about-me",
+    name: "About Me",
+    path: "/about-me",
+  },
+  {
     id: "skills",
     name: "Skills",
     path: "/skills",
@@ -20,11 +25,6 @@ export const MAIN_NAVIGATION: NavigationLink[] = [
     id: "projects",
     name: "Projects",
     path: "/projects",
-  },
-  {
-    id: "about-me",
-    name: "About Me",
-    path: "/about-me",
   },
   {
     id: "contact-me",
