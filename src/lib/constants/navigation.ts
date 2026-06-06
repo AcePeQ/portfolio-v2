@@ -26,11 +26,11 @@ export const MAIN_NAVIGATION: NavigationLink[] = [
     name: "Projects",
     path: "#projects",
   },
-  {
-    id: "contact-me",
-    name: "Contact Me",
-    path: "#contact-me",
-  },
+  // {
+  //   id: "contact-me",
+  //   name: "Contact Me",
+  //   path: "#contact-me",
+  // },
 ] as const;
 
 export const SOCIAL_MEDIA_NAVIGATION: NavigationLink[] = [
