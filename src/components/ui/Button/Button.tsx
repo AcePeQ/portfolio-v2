@@ -5,6 +5,7 @@ type ButtonProps = {
   isIcon?: boolean;
   download?: string;
   isLink?: boolean;
+  isBlank?: boolean;
   path?: string;
   variant?: "primary" | "secondary" | "ghost" | "active";
   size?: "small" | "medium" | "big"
@@ -13,7 +14,7 @@ type ButtonProps = {
   children: ReactNode
 }
 
-function Button({ isLink = false, download = "", path, isIcon = false, variant = "primary", size = "medium", type = "button", onClick, children }: ButtonProps) {
+function Button({ isLink = false, isBlank = false, download = "", path, isIcon = false, variant = "primary", size = "medium", type = "button", onClick, children }: ButtonProps) {
   let clsx = "flex items-center justify-center cursor-pointer ";
 
   if (variant === "primary") {
@@ -40,9 +41,9 @@ function Button({ isLink = false, download = "", path, isIcon = false, variant =
 
   if (isLink && path) {
     if (download) {
-      return <Link href={path} className={clsx} download={download}>{children}</Link>
+      return <Link href={path} target={isBlank ? '_blank' : ""} className={clsx} download={download}>{children}</Link>
     } else {
-      return <Link href={path} className={clsx}>{children}</Link>
+      return <Link href={path} target={isBlank ? '_blank' : ""} className={clsx}>{children}</Link>
     }
   }
 

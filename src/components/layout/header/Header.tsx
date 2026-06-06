@@ -14,7 +14,7 @@ function Header() {
         <MainNavigation />
       </div>
       <div className="w-40 items-center justify-end hidden sm:flex">
-        <Button isLink variant="primary" size="small" path="/#contact">Hire Me</Button>
+        <Button isLink isBlank variant="primary" size="small" path="https://www.linkedin.com/in/maciej-nojszewski-81359a35a/">Hire Me</Button>
       </div>
     </header>
   )

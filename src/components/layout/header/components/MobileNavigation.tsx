@@ -38,7 +38,7 @@ function MobileNavigation() {
                 )
               })}
               <li>
-                <Button isLink variant="primary" size="big" path="/#contact">Hire Me</Button>
+                <Button isLink isBlank variant="primary" size="big" path="https://www.linkedin.com/in/maciej-nojszewski-81359a35a/">Hire Me</Button>
               </li>
             </ul>
           </nav>

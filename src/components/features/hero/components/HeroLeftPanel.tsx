@@ -28,7 +28,7 @@ function HeroLeftPanel() {
       </nav>
 
       <div className="flex w-full justify-center lg:justify-start flex-col 2xs:flex-row gap-6 mb-10 2xs:mb-12 xl:mb-16">
-        <Button isLink path="/#contact" variant="primary" size="medium">Hire Me</Button>
+        <Button isLink isBlank path="https://www.linkedin.com/in/maciej-nojszewski-81359a35a/?skipRedirect=true" variant="primary" size="medium">Hire Me</Button>
         <Button isLink download="Maciej_Nojszewski_CV" path="/assets/files/Maciej_Nojszewski_CV.pdf" variant="ghost" size="medium">Download CV</Button>
       </div>
 
