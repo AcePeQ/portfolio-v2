@@ -33,6 +33,7 @@ function AnimationContainer({ id, children }: AnimationContainerProps) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.1, margin: "0px 0px -80px 0px" }}
+      className="scroll-mt-40"
     >
       {children}
     </motion.div>

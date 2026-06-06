@@ -9,27 +9,27 @@ export const MAIN_NAVIGATION: NavigationLink[] = [
   {
     id: "hero",
     name: "Home",
-    path: "/",
+    path: "#hero",
   },
   {
     id: "about-me",
     name: "About Me",
-    path: "/about-me",
+    path: "#about-me",
   },
   {
     id: "skills",
     name: "Skills",
-    path: "/skills",
+    path: "#skills",
   },
   {
     id: "projects",
     name: "Projects",
-    path: "/projects",
+    path: "#projects",
   },
   {
     id: "contact-me",
     name: "Contact Me",
-    path: "/contact-me",
+    path: "#contact-me",
   },
 ] as const;
 
