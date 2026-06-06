@@ -8,28 +8,41 @@ import { motion } from "motion/react"
 
 const ITEMS_PER_PAGE = 6;
 
-
+const listVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    }
+  },
+  exit: {},
+}
 
 function ProjectShowcase() {
   const [page, setPage] = useState(1);
   const [currentFilter, setCurrentFilter] = useState("all");
-  let showcaseProjects = SHOWCASE_PROJECTS.slice(0, page * ITEMS_PER_PAGE);
-
-  function handleFilter(value: string) {
-    setCurrentFilter(value);
-  }
+  let showcaseProjects = SHOWCASE_PROJECTS;
 
   if (currentFilter !== "all") {
     showcaseProjects = showcaseProjects.filter(project => currentFilter === project.type);
   }
 
+  const currentLength = showcaseProjects.length;
+
+
+  function handleFilter(value: string) {
+    setCurrentFilter(value);
+    setPage(1);
+  }
+
+
   function handleShowMore() {
-    if (SHOWCASE_PROJECTS.length <= page * ITEMS_PER_PAGE) return
+    if (currentLength <= page * ITEMS_PER_PAGE) return
 
     setPage(prevPage => prevPage + 1)
   }
 
-
+  showcaseProjects = showcaseProjects.slice(0, page * ITEMS_PER_PAGE)
 
   return (
     <section id="project-showcase">
@@ -50,11 +63,11 @@ function ProjectShowcase() {
         </ul>
       </div>
 
-      <motion.div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
+      <motion.div key={currentFilter} variants={listVariants} initial="hidden" animate="visible" exit="exit" className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
         {showcaseProjects.map(project => <ProjectCard key={project.name} project={project} />)}
       </motion.div>
 
-      {SHOWCASE_PROJECTS.length >= page * ITEMS_PER_PAGE &&
+      {currentLength > page * ITEMS_PER_PAGE &&
         <div className="mt-10 flex items-center justify-center">
           <Button onClick={handleShowMore}>Show more</Button>
         </div>
