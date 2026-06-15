@@ -1,6 +1,7 @@
 import Image from "next/image"
 import ImageFace from "@/assets/images/cartoonFaceAlpha.png"
 
+
 function HeroRightPanel() {
   return (
     <div className="flex lg:flex-2 xl:flex-1 w-4/6  2xs:w-3/6 lg:w-full lg:h-full">
