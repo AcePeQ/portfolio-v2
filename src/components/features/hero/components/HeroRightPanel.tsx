@@ -9,6 +9,7 @@ function HeroRightPanel() {
         <Image
           className="relative z-10 w-3/4 rounded-full"
           src={ImageFace}
+          placeholder="blur"
           alt="Picture of Maciej Nojszewski - blue eyes, dark short hair"
           loading="eager"
         />

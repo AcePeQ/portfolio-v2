@@ -140,7 +140,7 @@ body {
 }
 
 .active:hover,
-.active:focus {
+.active:focus-visible {
   color: var(--color-orange-normal-hover);
 }
 
